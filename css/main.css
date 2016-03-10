@@ -161,11 +161,12 @@ h1 {
     line-height: 47.25px;
 }
 
-h3 {
+h3,
+.text-highlight {
     font-family:'Open Sans', sans-serif;
     font-style: italic;
-    font-size: 21px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    letter-spacing: 1px;
     font-weight: lighter;
 }
 
@@ -177,7 +178,8 @@ h4 {
 .manifesto {
     font-family: 'Habibi', serif;
     font-size: 21px;
-    line-height: 31.5px;    
+    line-height: 30px;
+    margin-bottom: 30px;   
 }
 
 ul,
@@ -291,7 +293,7 @@ p {
 }
 
 .ov {
-    margin-bottom: 27px;
+    margin-bottom: 40px;
 }
 
 .refrences {
@@ -305,18 +307,22 @@ p {
     width: 700px;
 }
 
-.slides {
+/*.slides {
     border: 1px solid #e6e7e8;
-}
+}*/
 
 
 .bth {
     padding-top: 100px;
 }
 
-.vimeo {
-    margin-top: -50px;
+.adding-space {
+    padding-top: 400px;
 }
+
+/*.vimeo {
+    margin-top: -50px;
+}*/
 
 
 /*  =========================================================================
@@ -336,12 +342,14 @@ p {
 }
 
 .need-outline {
-    border: 1px solid #e6e7e8;
+    border: 1px solid rgba(255, 241, 0, 0.3);
 }
 
 .top-image {
     margin-top: -30px;
 }
+
+
 
 /*  =========================================================================
     img styling
@@ -361,14 +369,27 @@ p {
         visibility: hidden;
     }
 
+    .ov{
+    width: 700px;
+}
+
+.vimeo {
+        width: 700px;
+    }
+
+    .with-background {
+    background-image: url("../img/back/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 700px auto;
+    }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-    .flexslider {
-        margin-left: -10px;
-        width: 400px;
-    }
+    
 
     /*.hidden-text {
         visibility: hidden;
@@ -376,6 +397,23 @@ p {
     
     .vimeo {
         visibility: hidden;
+    }
+
+    .ov {
+        width: 500px;
+    }
+
+    .flexslider {
+        margin-left: -10px;
+        width: 500px;
+    }
+
+    .with-background {
+    background-image: url("../img/back/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 400px auto;
     }
 
 }
@@ -386,16 +424,25 @@ p {
         width: 302px;
     }
 
-    .flexslider {
-        display: none;
-    }
-
     .refrences {
         margin-left: 0;
     }
 
     .vimeo {
         visibility: hidden;
+    }
+
+    .flexslider {
+        margin-left: -10px;
+        width: 302px;
+    }
+
+    .with-background {
+    background-image: url("../img/back/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 200px auto;
     }
 }
 
@@ -589,7 +636,7 @@ p {
     p,
     h2,
     h3 {
-        orphans: 3;
+        orphans: 1;
         widows: 3;
     }
 
